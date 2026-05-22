@@ -196,3 +196,13 @@ span {
   margin: 0 !important;
   z-index: 9999;
 }
+
+@media (max-width: 768px) {
+  .cat-gif {
+    display: none;
+  }
+
+  .cartao {
+    margin: 20px auto;
+  }
+}
