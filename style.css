@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #f8cdda, #fbd3e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+.cartao {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-5px);
+}
+
+.cartao img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #ffe4ec;
+}
+
+h1 {
+  font-size: 28px;
+  color: #2c2c2a;
+  margin-bottom: 8px;
+  font-weight: 700;
+  
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c2c2a;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+h2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #ff6fa5;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 999px;
+}
+
+.descricao {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0 35px;
+}
+
+.skills span {
+  background: #ffe4ec;
+  color: #ff4f91;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.skills span:hover {
+  transform: translateY(-3px);
+  background: #ffd5e3;
+}
+
+.botao a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #ff6fa5;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.botao a:hover {
+  background-color: #ff4f91;
+  transform: scale(1.05);
+}
+
+span {
+  display: inline-block;
+}
+
+.socials {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials i {
+  font-size: 24px;
+  color: #666;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  color: #ff4f91;
+  transform: scale(1.2);
+}
+.botao {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #ff6fa5;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.botao:hover {
+  background: #ff4f91;
+  transform: scale(1.05);
+}
+
+.cat-gif {
+  width: 120px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
