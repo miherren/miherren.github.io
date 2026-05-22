@@ -21,7 +21,6 @@
     <h1>Milenny Herren</h1>
     <p class="descricao">Building my front-end skills one project at a time.</p>
 
-
     <h2>Skills</h2>
 
     <div class="skills">
@@ -42,12 +41,29 @@
       <a href="https://www.instagram.com/miherren/"><i class="bi bi-instagram"></i></a>
       <a href="https://github.com/miherren"><i class="bi bi-github"></i></a>
       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=milenny.ns@gmail.com"
-target="_blank"><i class="bi bi-envelope-fill"></i>
-
-</a>
+target="_blank"><i class="bi bi-envelope-fill"></i></a>
+</div>
     </div>
 
-    <img src="img/cat.gif" class="cat-gif" alt="cat">
+<img src="img/cat.gif" class="cat-gif" id="cat-gif" alt="cat">
+
+<script>
+  const cat = document.getElementById('cat-gif');
+  let mouseX = -200, mouseY = -200;
+  let catX = -200, catY = -200;
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX - 40;
+    mouseY = e.clientY - 40;
+  });
+  function animate() {
+    catX += (mouseX - catX) * 0.15;
+    catY += (mouseY - catY) * 0.15;
+    cat.style.left = catX + 'px';
+    cat.style.top  = catY + 'px';
+    requestAnimationFrame(animate);
+  }
+  animate();
+</script>
 
 
 </body>
