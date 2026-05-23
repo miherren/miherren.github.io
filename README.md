@@ -1,6 +1,6 @@
-# My Portfolio
+# About
 
-This is my first portfolio website built with HTML and CSS.
+This is my first project website built with HTML and CSS.
 
 ## Technologies
 - HTML
