@@ -68,7 +68,7 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 2rem;
   color: #2c2c2a;
   margin-bottom: 8px;
   font-weight: 700;
@@ -113,7 +113,7 @@ h2::after {
 .skills span {
   background: #ffe4ec;
   color: #ff4f91;
-  padding: 10px 16px;
+  padding: 10px 1rem;
   border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
